@@ -21,7 +21,7 @@ is similar with NDVI, RVI observation can through the Cloud, but can be sensitiv
 ## Conclusion
 As discussed previously, it is possible to use optical and radar data to track these growing stages over time. Optical data will tell us about the "greenness" of the plant and radar data will tell us about the "structure" of the plant. For example, peak "greenness" occurs before full plant maturity as the rice grain is formed prior to harvest. In the case of "structure", which can be measured with radar data, we are able to see differences in scattering at the various growth stages. Early stages might see less scattering due to reflections from background soil or flooded fields. The peak flowering stage may see maximized scattering due to dense foliage, whereas, the ripening stage prior to harvest may see a drop in scattering due to rice tassel formation and "layover" of the plant. In the end, there will be differences between the optical and radar phenology, but it is still possible to relate this data to the growth stages and build a good yield model. 
 
-## What should you do? What do you get?
+# What should you do? What do you get?
 Level 1, Finding rice crops
 1. consider the time series variations in satellite data bands or statistical combinations of bands
 2. carefully decide how many pixels should be include in a window
@@ -29,3 +29,23 @@ Level 1, Finding rice crops
 
 1. location of rice crops and the locations of non-rice crops(forest, other vegetation, water)
 2. Sample Notebook for Landsat, Sentinel-2(Optical), Sentinel-1(Radar)
+
+# Challenge 1 submission template
+two column: ID, Target
+ID:tuple likes latitude and longitude.
+Target: Blank
+## What does it for?
+perhaps I need to fill it? in the way of Crop Location Data
+
+# Crop Location Data
+With column (Latitude,Longitude) (Tuple), Class of Land (Binary String, rice or not rice)
+## What does it for?
+Currently no idea
+
+# Level 1 Notebbok Benchmark
+
+# Landsat cloud filtering
+
+# Sentinel 1 Phenology(Radar)
+
+# Sentinel 2 cloud filtering(Optical)
