@@ -43,6 +43,20 @@ With column (Latitude,Longitude) (Tuple), Class of Land (Binary String, rice or 
 Currently no idea
 
 # Level 1 Notebbok Benchmark
+The benchmark built a basic model predict binary classification for rice and non-rice, based on Sentinel-1 Radiometrically terrain corrected(RTC) dataset.
+Two features from Sentinel-1 are in used: VV, VH. For trainning a logistic regression model.
+<ul>
+<li>VV - gamma naught values of signal transmitted with vertical polarization and received with vertical polarization with radiometric terrain correction applied.
+
+<li>VH - gamma naught values of signal transmitted with vertical polarization and received with horizontal polarization with radiometric terrain correction applied.
+</ul>
+Both two features woul not be affected by cloud
+
+In this Demo, one day(21st March 2020) has been extracted as the present of the entire 2020 for given location.
+
+1. Access the data from the Sentinel-1
+Once get the API key, you have the access to Microsoft planetary Computer. Fetch the ```VV and VH``` ban values for ```particular location``` over ```specified time window```.
+Set the windows size? Does one line la-long means one pixel? Still many question.
 
 # Landsat cloud filtering
 
