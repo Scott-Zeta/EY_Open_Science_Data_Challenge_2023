@@ -35,12 +35,12 @@ two column: ID, Target
 ID:tuple likes latitude and longitude.
 Target: Blank
 ## What does it for?
-perhaps I need to fill it? in the way of Crop Location Data
+This is what you need to submit, with the prediction from the your ML model.
 
 # Crop Location Data
 With column (Latitude,Longitude) (Tuple), Class of Land (Binary String, rice or not rice)
 ## What does it for?
-Currently no idea
+Data for training and testing
 
 # Level 1 Notebbok Benchmark
 The benchmark built a basic model predict binary classification for rice and non-rice, based on Sentinel-1 Radiometrically terrain corrected(RTC) dataset.
@@ -57,6 +57,14 @@ In this Demo, one day(21st March 2020) has been extracted as the present of the 
 1. Access the data from the Sentinel-1
 Once get the API key, you have the access to Microsoft planetary Computer. Fetch the ```VV and VH``` ban values for ```particular location``` over ```specified time window```.
 Set the windows size? Does one line la-long means one pixel? Still many question.
+2. Combine la-long and land class dataset with VH, VV dataset, looks like Crop_location_data is for training and testting
+3. Edit dataset, we only need VH,VV as the features to predict the Class of Land. ['vv', 'vh','Class of Land']
+4. Split the y_train, y_test and X_train, X_test, use scaler to get standard data.
+5. Model training, use Logistic Regression as the example
+6. Evaluation. This benchmark use X_train to predict and compare with y_train. I am wondering if it should use test set, or it might be 100% accuracy since traning data overfit?
+It is called in-sample evaluation, and there is an out-sample evaluation use test data. Well, I don't think it makes too much sense.
+7. Use a prediction matrix to visualize the correct predict, false positive, true negative.
+8. If it is satisfied enought, use it predict the Challenge 1 submission template, then submit for offical evalution
 
 # Landsat cloud filtering
 
