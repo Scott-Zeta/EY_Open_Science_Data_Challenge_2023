@@ -69,5 +69,12 @@ It is called in-sample evaluation, and there is an out-sample evaluation use tes
 # Landsat cloud filtering
 
 # Sentinel 1 Phenology(Radar)
+1. import API
+2. Decide the box size by: 1. pick a centroid; 2. define a box size; 3. use centroid and box size build a rectangle as the box. ```Each bounding box is one pixel.```, in the example given, 10 meters square per pixel.
+3. take the time periods from 2021-12 to 2022-04, use function get the dataset from sentinel-1.
+4. get the data, calculate RVI(Radar Index)
+Question:
+1. Why there are six long-la pairs in the example dataset? I hard to test since I didn't got the API key yet. 
+2. It used scale for converting meter to latitude. Did longtitude be scaled in same rate? On georgraphy is not correct. But is that matter in our analysis? (if we need a ractangle but not a square, and since we only analysis a liitle area, so the bias of longtitude change doesn't matter?) Is that because data is from Vietnam, and it close to equtor, so use an approxy number?
 
 # Sentinel 2 cloud filtering(Optical)
